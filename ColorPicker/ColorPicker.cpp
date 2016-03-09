@@ -73,6 +73,6 @@ int main(int argc, char** argv)
 	* 27 - ASCII код ESC
 	*/
     imshow("Image",image);
-	if(waitKey(0)==27);
+	while(waitKey(0)!=27);
 	return 0;
 }

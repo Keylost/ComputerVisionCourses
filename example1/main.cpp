@@ -73,11 +73,11 @@ void convert_simple(Mat &original, Mat &result,convert_type ctype)
 					break;
 				case NTSC:
 					//данные коеффициенты используются в PAL/NTSC
-					result_row[j] = b*0.114 + g*0.587 + r*0.299;
+					result_row[j] = (uint8_t)(b*0.114 + g*0.587 + r*0.299);
 					break;
 				case HDTV:
 					//стандарт ITU-R BT.709 испоользуемый в HDTV
-					result_row[j] = b*0.0722 + g*0.7152 + r*0.2126;
+					result_row[j] = (uint8_t)(b*0.0722 + g*0.7152 + r*0.2126);
 					break;
 				default: break;
 			}

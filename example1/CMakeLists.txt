@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 2.8)
 
 IF (WIN32)
 #path to opencv build directory
-set(OpenCV_DIR C:/opencv/opencv/build)
+set(OpenCV_DIR E:/opencv/build_15)
 set(OpenCV_INCLUDES ${OpenCV_DIR}/include)
 endif(WIN32)
 
@@ -14,7 +14,8 @@ if("${CMAKE_CXX_COMPILER_ID}" STREQUAL "GNU")
 	set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wall")
 endif("${CMAKE_CXX_COMPILER_ID}" STREQUAL "GNU")
 
-find_package(OpenCV)
+set(OpenCV_STATIC ON)
+find_package(OpenCV REQUIRED)
 
 set(SOURCES main.cpp
 )
