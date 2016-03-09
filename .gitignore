@@ -1,6 +1,6 @@
-CMakeCache.txt
-CMakeFiles
-CMakeScripts
-Makefile
-cmake_install.cmake
-install_manifest.txt
+/ColorPicker/build
+/example1/build
+/example2/build
+/example3/build
+/example4/build
+/example5/build
