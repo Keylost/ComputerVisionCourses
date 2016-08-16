@@ -1,0 +1,1 @@
+/home/user/Projects/courses/example6/build/CMakeFiles/example.dir
