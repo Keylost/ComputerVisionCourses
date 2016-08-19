@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/user/Projects/courses/example6
+CMAKE_SOURCE_DIR = /home/user/Projects/ComputerVisionCourses/example6
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/user/Projects/courses/example6/build
+CMAKE_BINARY_DIR = /home/user/Projects/ComputerVisionCourses/example6/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/example.dir/depend.make
@@ -51,17 +51,17 @@ include CMakeFiles/example.dir/flags.make
 
 CMakeFiles/example.dir/main.cpp.o: CMakeFiles/example.dir/flags.make
 CMakeFiles/example.dir/main.cpp.o: ../main.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/user/Projects/courses/example6/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/user/Projects/ComputerVisionCourses/example6/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/example.dir/main.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/example.dir/main.cpp.o -c /home/user/Projects/courses/example6/main.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/example.dir/main.cpp.o -c /home/user/Projects/ComputerVisionCourses/example6/main.cpp
 
 CMakeFiles/example.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/example.dir/main.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/user/Projects/courses/example6/main.cpp > CMakeFiles/example.dir/main.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/user/Projects/ComputerVisionCourses/example6/main.cpp > CMakeFiles/example.dir/main.cpp.i
 
 CMakeFiles/example.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/example.dir/main.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/user/Projects/courses/example6/main.cpp -o CMakeFiles/example.dir/main.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/user/Projects/ComputerVisionCourses/example6/main.cpp -o CMakeFiles/example.dir/main.cpp.s
 
 CMakeFiles/example.dir/main.cpp.o.requires:
 .PHONY : CMakeFiles/example.dir/main.cpp.o.requires
@@ -81,46 +81,48 @@ example_EXTERNAL_OBJECTS =
 
 example: CMakeFiles/example.dir/main.cpp.o
 example: CMakeFiles/example.dir/build.make
-example: /usr/local/lib/libopencv_xphoto.so.3.1.0
-example: /usr/local/lib/libopencv_xobjdetect.so.3.1.0
-example: /usr/local/lib/libopencv_tracking.so.3.1.0
-example: /usr/local/lib/libopencv_surface_matching.so.3.1.0
-example: /usr/local/lib/libopencv_structured_light.so.3.1.0
-example: /usr/local/lib/libopencv_stereo.so.3.1.0
-example: /usr/local/lib/libopencv_saliency.so.3.1.0
-example: /usr/local/lib/libopencv_rgbd.so.3.1.0
-example: /usr/local/lib/libopencv_reg.so.3.1.0
-example: /usr/local/lib/libopencv_plot.so.3.1.0
-example: /usr/local/lib/libopencv_optflow.so.3.1.0
-example: /usr/local/lib/libopencv_line_descriptor.so.3.1.0
-example: /usr/local/lib/libopencv_fuzzy.so.3.1.0
-example: /usr/local/lib/libopencv_dpm.so.3.1.0
-example: /usr/local/lib/libopencv_dnn.so.3.1.0
-example: /usr/local/lib/libopencv_datasets.so.3.1.0
-example: /usr/local/lib/libopencv_ccalib.so.3.1.0
-example: /usr/local/lib/libopencv_bioinspired.so.3.1.0
-example: /usr/local/lib/libopencv_bgsegm.so.3.1.0
-example: /usr/local/lib/libopencv_aruco.so.3.1.0
-example: /usr/local/lib/libopencv_videostab.so.3.1.0
-example: /usr/local/lib/libopencv_superres.so.3.1.0
-example: /usr/local/lib/libopencv_stitching.so.3.1.0
-example: /usr/local/lib/libopencv_photo.so.3.1.0
-example: /usr/local/lib/libopencv_text.so.3.1.0
-example: /usr/local/lib/libopencv_face.so.3.1.0
-example: /usr/local/lib/libopencv_ximgproc.so.3.1.0
-example: /usr/local/lib/libopencv_xfeatures2d.so.3.1.0
-example: /usr/local/lib/libopencv_shape.so.3.1.0
-example: /usr/local/lib/libopencv_video.so.3.1.0
-example: /usr/local/lib/libopencv_objdetect.so.3.1.0
-example: /usr/local/lib/libopencv_calib3d.so.3.1.0
-example: /usr/local/lib/libopencv_features2d.so.3.1.0
-example: /usr/local/lib/libopencv_ml.so.3.1.0
-example: /usr/local/lib/libopencv_highgui.so.3.1.0
-example: /usr/local/lib/libopencv_videoio.so.3.1.0
-example: /usr/local/lib/libopencv_imgcodecs.so.3.1.0
-example: /usr/local/lib/libopencv_imgproc.so.3.1.0
-example: /usr/local/lib/libopencv_flann.so.3.1.0
-example: /usr/local/lib/libopencv_core.so.3.1.0
+example: /opt/ros/kinetic/lib/libopencv_xphoto3.so.3.1.0
+example: /opt/ros/kinetic/lib/libopencv_xobjdetect3.so.3.1.0
+example: /opt/ros/kinetic/lib/libopencv_tracking3.so.3.1.0
+example: /opt/ros/kinetic/lib/libopencv_surface_matching3.so.3.1.0
+example: /opt/ros/kinetic/lib/libopencv_structured_light3.so.3.1.0
+example: /opt/ros/kinetic/lib/libopencv_stereo3.so.3.1.0
+example: /opt/ros/kinetic/lib/libopencv_saliency3.so.3.1.0
+example: /opt/ros/kinetic/lib/libopencv_rgbd3.so.3.1.0
+example: /opt/ros/kinetic/lib/libopencv_reg3.so.3.1.0
+example: /opt/ros/kinetic/lib/libopencv_plot3.so.3.1.0
+example: /opt/ros/kinetic/lib/libopencv_optflow3.so.3.1.0
+example: /opt/ros/kinetic/lib/libopencv_line_descriptor3.so.3.1.0
+example: /opt/ros/kinetic/lib/libopencv_hdf3.so.3.1.0
+example: /opt/ros/kinetic/lib/libopencv_fuzzy3.so.3.1.0
+example: /opt/ros/kinetic/lib/libopencv_dpm3.so.3.1.0
+example: /opt/ros/kinetic/lib/libopencv_dnn3.so.3.1.0
+example: /opt/ros/kinetic/lib/libopencv_datasets3.so.3.1.0
+example: /opt/ros/kinetic/lib/libopencv_ccalib3.so.3.1.0
+example: /opt/ros/kinetic/lib/libopencv_bioinspired3.so.3.1.0
+example: /opt/ros/kinetic/lib/libopencv_bgsegm3.so.3.1.0
+example: /opt/ros/kinetic/lib/libopencv_aruco3.so.3.1.0
+example: /opt/ros/kinetic/lib/libopencv_viz3.so.3.1.0
+example: /opt/ros/kinetic/lib/libopencv_videostab3.so.3.1.0
+example: /opt/ros/kinetic/lib/libopencv_superres3.so.3.1.0
+example: /opt/ros/kinetic/lib/libopencv_stitching3.so.3.1.0
+example: /opt/ros/kinetic/lib/libopencv_photo3.so.3.1.0
+example: /opt/ros/kinetic/lib/libopencv_text3.so.3.1.0
+example: /opt/ros/kinetic/lib/libopencv_face3.so.3.1.0
+example: /opt/ros/kinetic/lib/libopencv_ximgproc3.so.3.1.0
+example: /opt/ros/kinetic/lib/libopencv_xfeatures2d3.so.3.1.0
+example: /opt/ros/kinetic/lib/libopencv_shape3.so.3.1.0
+example: /opt/ros/kinetic/lib/libopencv_video3.so.3.1.0
+example: /opt/ros/kinetic/lib/libopencv_objdetect3.so.3.1.0
+example: /opt/ros/kinetic/lib/libopencv_calib3d3.so.3.1.0
+example: /opt/ros/kinetic/lib/libopencv_features2d3.so.3.1.0
+example: /opt/ros/kinetic/lib/libopencv_ml3.so.3.1.0
+example: /opt/ros/kinetic/lib/libopencv_highgui3.so.3.1.0
+example: /opt/ros/kinetic/lib/libopencv_videoio3.so.3.1.0
+example: /opt/ros/kinetic/lib/libopencv_imgcodecs3.so.3.1.0
+example: /opt/ros/kinetic/lib/libopencv_imgproc3.so.3.1.0
+example: /opt/ros/kinetic/lib/libopencv_flann3.so.3.1.0
+example: /opt/ros/kinetic/lib/libopencv_core3.so.3.1.0
 example: CMakeFiles/example.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable example"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/example.dir/link.txt --verbose=$(VERBOSE)
@@ -137,6 +139,6 @@ CMakeFiles/example.dir/clean:
 .PHONY : CMakeFiles/example.dir/clean
 
 CMakeFiles/example.dir/depend:
-	cd /home/user/Projects/courses/example6/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/user/Projects/courses/example6 /home/user/Projects/courses/example6 /home/user/Projects/courses/example6/build /home/user/Projects/courses/example6/build /home/user/Projects/courses/example6/build/CMakeFiles/example.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/user/Projects/ComputerVisionCourses/example6/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/user/Projects/ComputerVisionCourses/example6 /home/user/Projects/ComputerVisionCourses/example6 /home/user/Projects/ComputerVisionCourses/example6/build /home/user/Projects/ComputerVisionCourses/example6/build /home/user/Projects/ComputerVisionCourses/example6/build/CMakeFiles/example.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/example.dir/depend
 

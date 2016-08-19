@@ -47,10 +47,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/user/Projects/courses/example6
+CMAKE_SOURCE_DIR = /home/user/Projects/ComputerVisionCourses/example6
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/user/Projects/courses/example6/build
+CMAKE_BINARY_DIR = /home/user/Projects/ComputerVisionCourses/example6/build
 
 #=============================================================================
 # Target rules for target CMakeFiles/example.dir
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/user/Projects/courses/example6/build
 CMakeFiles/example.dir/all:
 	$(MAKE) -f CMakeFiles/example.dir/build.make CMakeFiles/example.dir/depend
 	$(MAKE) -f CMakeFiles/example.dir/build.make CMakeFiles/example.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/user/Projects/courses/example6/build/CMakeFiles  1
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/user/Projects/ComputerVisionCourses/example6/build/CMakeFiles  1
 	@echo "Built target example"
 .PHONY : CMakeFiles/example.dir/all
 
@@ -69,9 +69,9 @@ all: CMakeFiles/example.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/example.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/Projects/courses/example6/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/Projects/ComputerVisionCourses/example6/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/example.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/Projects/courses/example6/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/Projects/ComputerVisionCourses/example6/build/CMakeFiles 0
 .PHONY : CMakeFiles/example.dir/rule
 
 # Convenience name for target.

@@ -1,1 +1,1 @@
-/home/user/Projects/courses/example6/build/CMakeFiles/example.dir
+/home/user/Projects/ComputerVisionCourses/example6/build/CMakeFiles/example.dir

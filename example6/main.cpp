@@ -5,10 +5,14 @@
 using namespace cv;
 using namespace std;
 
+vector<Point> num1Templ;
 vector<Point> num2Templ;
 vector<Point> num3Templ;
 vector<Point> num4Templ;
+vector<Point> num5Templ;
 vector<Point> num6Templ;
+vector<Point> num7Templ;
+vector<Point> num8Templ;
 vector<Point> num9Templ;
 
 struct Number
@@ -29,7 +33,7 @@ void signsDetector(Mat &image)
 
 void numDetector(Mat &image)
 {
-	namedWindow("Number");
+	namedWindow("Number",0);
 	
 	int32_t r,g,b;
 	uint8_t *row,*bin;
@@ -86,8 +90,13 @@ void numDetector(Mat &image)
 			}
 		}
 		
-		if(minL<0.5)
-			printf("Number: %d\n", Numbers[minI].num);	
+		printf("Number: %d\n", Numbers[minI].num);
+		char buffer[10];
+		cv::Scalar color= CV_RGB(255,0,0);
+		double size =1.1;
+		snprintf(buffer, sizeof(buffer), "NUM: %d",Numbers[minI].num);
+		cv::putText(image, string(buffer), cv::Point(15, 25), cv::FONT_HERSHEY_COMPLEX_SMALL, size, color);
+		
 	}
 	imshow("Number",image);
 	waitKey(0);
@@ -150,20 +159,32 @@ void getTempl(vector<Point> &numVec, const char* file)
 
 int main(int argc, char** argv)
 {
+	Number n1; n1.num = 1;
 	Number n2; n2.num = 2;
 	Number n3; n3.num = 3;
 	Number n4; n4.num = 4;
+	Number n5; n5.num = 5;
 	Number n6; n6.num = 6;
+	Number n7; n7.num = 7;
+	Number n8; n8.num = 8;
 	Number n9; n9.num = 9;
+	getTempl(n1.templ,"../img/1.png");
 	getTempl(n2.templ,"../img/2.png");
 	getTempl(n3.templ,"../img/3.png");
 	getTempl(n4.templ,"../img/4.png");
+	getTempl(n5.templ,"../img/5.png");
 	getTempl(n6.templ,"../img/6.png");
+	getTempl(n7.templ,"../img/7.png");
+	getTempl(n8.templ,"../img/8.png");
 	getTempl(n9.templ,"../img/9.png");
+	Numbers.push_back(n1);
 	Numbers.push_back(n2);
 	Numbers.push_back(n3);
 	Numbers.push_back(n4);
+	Numbers.push_back(n5);
 	Numbers.push_back(n6);
+	Numbers.push_back(n7);
+	Numbers.push_back(n8);
 	Numbers.push_back(n9);
     
     
@@ -181,7 +202,7 @@ int main(int argc, char** argv)
 	cap.set(CV_CAP_PROP_FRAME_HEIGHT,height);
 	cap.set(CV_CAP_PROP_FPS,fps);
     
-    namedWindow("stream",1);
+    namedWindow("stream",0);
     
     
     for(;;)
